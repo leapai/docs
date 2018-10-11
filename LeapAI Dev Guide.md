@@ -21,6 +21,14 @@
 
 ![img](leaplate.png)
 
+## 应用程序打包
+
+1. 开发完成后，可以通过以下命令将应用程序打包，以便上传到LeapAI.com平台
+
+​        ``meteor build --architecture=os.linux.x86_64 ../output``
+
+​        生成的``tar.gz``程序包将被存储于output目录中
+
 ## 重要API
 
 1. LeapAI通过API网关、UCQ、API Broker/FlexBroker实现从云端访问用户环境的API。返回的数据由API Broker/FlexBroker直接推送到云端的实时数据库，再通过动态数据交换协议（DDP）实现与UI同步。
